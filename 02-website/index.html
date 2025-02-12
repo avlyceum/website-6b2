@@ -7,80 +7,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <style>
-            /* http://meyerweb.com/eric/tools/css/reset/ 
-            v2.0 | 20110126
-            License: none (public domain)
-            */
-
-            html, body, div, span, applet, object, iframe,
-            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-            a, abbr, acronym, address, big, cite, code,
-            del, dfn, em, img, ins, kbd, q, s, samp,
-            small, strike, strong, sub, sup, tt, var,
-            b, u, i, center,
-            dl, dt, dd, ol, ul, li,
-            fieldset, form, label, legend,
-            table, caption, tbody, tfoot, thead, tr, th, td,
-            article, aside, canvas, details, embed, 
-            figure, figcaption, footer, header, hgroup, 
-            menu, nav, output, ruby, section, summary,
-            time, mark, audio, video {
-                margin: 0;
-                padding: 0;
-                border: 0;
-                font-size: 100%;
-                font: inherit;
-                vertical-align: baseline;
-            }
-            /* HTML5 display-role reset for older browsers */
-            article, aside, details, figcaption, figure, 
-            footer, header, hgroup, menu, nav, section {
-                display: block;
-            }
-            body {
-                line-height: 1;
-            }
-            ol, ul {
-                list-style: none;
-            }
-            blockquote, q {
-                quotes: none;
-            }
-            blockquote:before, blockquote:after,
-            q:before, q:after {
-                content: '';
-                content: none;
-            }
-            table {
-                border-collapse: collapse;
-                border-spacing: 0;
-            }
-            
-            body {
-                font-family: "Work Sans", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: normal;
-                font-style: normal;
-                font-size: 15px;
-                line-height: 1.25;
-            }
-            h1, h2, h3, h4, h5, h6 {
-                font-family: "Crimson Text", serif;
-                font-size: 40px;
-                font-weight: bold;
-                line-height: 1.25;
-            }
-            h2 {
-                font-size: 32px;
-            }
-            h3 {
-                font-size: 28px;
-            }
-        </style>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-color: #74C69D">
-        <header>
+    <body style="background-color: #CCCCCC">
+        <header class="container">
             <img src="images/logo.svg" alt="Logo Start" />
             <nav>
                 <a href="index.html">Home</a>
@@ -91,15 +22,19 @@
         </header>
 
         <main>
-            <section>
-                <img src="images/hero.png" alt="Hero section" width="300" />
-                <p>Welcome</p>
-                <h1>Lorem ipsum dolor sit amet consectetur </h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
-                <a href="#">Explore</a>
+            <section class="hero container">
+                <div>
+                    <img src="images/hero.png" alt="Hero section" />
+                </div>
+                <div>
+                    <p>Welcome</p>
+                    <h1>Lorem ipsum dolor sit amet consectetur </h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+                    <a href="#">Explore</a>
+                </div>
             </section>
 
-            <section style="background-color: white;">
+            <section class="container" style="background-color: white;">
                 <p>Partners</p>
                 <h2>Lorem Ipsum Dolor</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur
@@ -112,7 +47,7 @@
             </section>
         </main>
         
-        <footer>
+        <footer class="container">
             <nav>
                 <a href="#">
                     <img src="images/icon-facebook.svg" alt="Facebook icon" />
